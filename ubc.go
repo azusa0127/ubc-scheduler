@@ -21,7 +21,7 @@ func main() {
 	println("------------")
 	filteredSects := filterCoursesBySchedule(*deptP, *termP, *dayP, *startTimeP, *upperOnlyP)
 	for _, sect := range filteredSects {
-		println(sect.Section)
+		println(sect.Section, sect.Days, sect.StartTime, sect.EndTime, sect.Status)
 	}
 	println("------------")
 }
